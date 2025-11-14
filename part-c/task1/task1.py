@@ -1,5 +1,5 @@
-import numpy as np
 from EDF import *
+import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import datasets
 from scipy.stats import multivariate_normal
@@ -10,8 +10,8 @@ from matplotlib import pyplot
 LEARNING_RATE = 0.01
 EPOCHS = 20
 TEST_SIZE = 0.4
-BATCH_SIZE=10
-WIDTH=250
+BATCH_SIZE = 128
+WIDTH = 128
 
 
 (train_X, train_y), (test_X, test_y) =  datasets.mnist.load_data()
